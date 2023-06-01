@@ -6,3 +6,14 @@ console.log('JS OK')
 
 const playerNumber = Math.floor(Math.random()* 6) + 1;
 const cpuNumber = Math.floor(Math.random()* 6) + 1;
+
+let result = 'Pareggio!';
+
+//controlla chi ha vinto
+
+if (playerNumber > cpuNumber) { 
+    result = 'Ha vinto il giocatore';
+} else if (playerNumber < cpuNumber) { 
+    result = 'Ha vinto la CPU';
+}
+console.log(result);|
